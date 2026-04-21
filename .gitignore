@@ -1,0 +1,16 @@
+infer.py
+notes.txt
+results/
+weights/
+images/
+
+.venv/
+venv/
+env/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.vscode/
+.env
