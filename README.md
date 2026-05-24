@@ -1,4 +1,4 @@
-Retinopathy-AI
+# Retinopathy-AI
 
 Diabetic retinopathy grading using a ConvNeXt-Tiny ensemble trained on the APTOS dataset via Kaggle (free GPU).
 
