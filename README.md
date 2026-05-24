@@ -2,11 +2,11 @@
 
 Diabetic retinopathy grading using a ConvNeXt-Tiny ensemble trained on the APTOS dataset via Kaggle (free GPU).
 
-What it does:
+# What it does:
 
 Takes retinal fundus images as input and predicts the DR grade (0–4) using a 5-fold model ensemble with Test-Time Augmentation (TTA). Also generates Grad-CAM heatmaps to visualize which regions of the image influenced the prediction.
 
-Grades:
+# Grades:
 
 0 — No DR
 
@@ -18,7 +18,7 @@ Grades:
 
 4 — Proliferative DR
 
-Files:
+# Files:
 
 infer2.py = Main inference script with Grad-CAM, uncertainty flagging, and detailed terminal output
 
@@ -27,23 +27,23 @@ inference.py = Simpler inference script — just grades + confidence
 inspect_weights.py = Inspect loaded .pth weight files (layer count, param count, size)
 
 
-Usage
+# Usage
 
-# Full inference with Grad-CAM and uncertainty flagging
+Full inference with Grad-CAM and uncertainty flagging:
 
 python infer2.py
 
-# Simple inference (grade + confidence only)
+Simple inference (grade + confidence only):
 
 python inference.py
 
-# Inspect weight files
+Inspect weight files:
 
 python inspect_weights.py
 
 
 
-Key features:
+# Key features:
 
 5-fold ensemble — averages predictions across multiple model weights for more reliable output
 
@@ -56,12 +56,12 @@ Grad-CAM — saves heatmap overlays showing which retinal regions drove the pred
 Ben Graham preprocessing — standard fundus image enhancement before inference
 
 
-Notes:
+# Notes:
 
 
 Weights were trained on Kaggle using free GPU (T4)
 
-Model: convnext_tiny.fb_in22k_ft_in1k via the timm library
+Model: convnext_tiny.fb_in22k_ft_in1k  via the timm library
 
 CPU inference supported; GPU used automatically if available
 
