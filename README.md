@@ -2,6 +2,10 @@
 
 Diabetic retinopathy grading using a ConvNeXt-Tiny ensemble trained on the APTOS dataset via Kaggle (free GPU).
 
+## Architecture
+![Architecture Diagram](./architecture/how_it_works.svg)
+
+
 # What it does:
 
 Takes retinal fundus images as input and predicts the DR grade (0–4) using a 5-fold model ensemble with Test-Time Augmentation (TTA). Also generates Grad-CAM heatmaps to visualize which regions of the image influenced the prediction.
