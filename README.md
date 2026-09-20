@@ -2,6 +2,39 @@
 
 Diabetic retinopathy grading using a ConvNeXt-Tiny ensemble trained on the APTOS dataset via Kaggle (free GPU).
 
+
+## Output
+
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; max-width: 800px; margin: 20px auto; font-family: sans-serif;">
+  
+
+  <div style="width: 100%; height: 320px; text-align: center; border: 1px solid #e1e4e8; padding: 10px; border-radius: 6px; background-color: #f6f8fa; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+    <img src="outputs/tta-comparison/confidence_stability_plot.png" alt="TTA Stability Plot" style="max-width: 100%; max-height: 80%; object-fit: contain; border-radius: 4px;" />
+    <p style="margin: 8px 0 0 0; font-weight: bold; color: #24292e; font-size: 14px;">Caption 1: TTA Pipeline Confidence vs Baseline</p>
+  </div>
+
+
+  <div style="width: 100%; height: 320px; text-align: center; border: 1px solid #e1e4e8; padding: 10px; border-radius: 6px; background-color: #f6f8fa; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+    <img src="outputs/evaluation-unseen-data/dr_accuracy_breakdown.png" alt="DR Accuracy Breakdown" style="max-width: 100%; max-height: 80%; object-fit: contain; border-radius: 4px;" />
+    <p style="margin: 8px 0 0 0; font-weight: bold; color: #24292e; font-size: 14px;">Caption 2: DR Accuracy Breakdown on Unseen Data</p>
+  </div>
+
+
+  <div style="width: 100%; height: 320px; text-align: center; border: 1px solid #e1e4e8; padding: 10px; border-radius: 6px; background-color: #f6f8fa; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+    <img src="outputs/weights_inspection/cross_fold_performance_summary.png" alt="Cross Validation QWK" style="max-width: 100%; max-height: 80%; object-fit: contain; border-radius: 4px;" />
+    <p style="margin: 8px 0 0 0; font-weight: bold; color: #24292e; font-size: 14px;">Caption 3: 5-Fold Best Val QWK Comparison</p>
+  </div>
+
+
+  <div style="width: 100%; height: 320px; text-align: center; border: 1px solid #e1e4e8; padding: 10px; border-radius: 6px; background-color: #f6f8fa; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+    <img src="outputs/weights_inspection/weight_distribution_fold_0.png" alt="Fold 0 Weight Distribution" style="max-width: 100%; max-height: 80%; object-fit: contain; border-radius: 4px;" />
+    <p style="margin: 8px 0 0 0; font-weight: bold; color: #24292e; font-size: 14px;">Caption 4: backbone.stem.0 Weight Distribution (Fold 0)</p>
+  </div>
+
+</div>
+
+
 ## Architecture
 ![Architecture Diagram](./architecture/how_it_works.svg)
 

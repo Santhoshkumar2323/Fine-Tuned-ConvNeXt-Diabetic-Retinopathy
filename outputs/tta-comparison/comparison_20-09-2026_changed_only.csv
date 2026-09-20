@@ -1,0 +1,4 @@
+image,grade_no_tta,grade_tta,confidence_%_no_tta,confidence_%_tta,confidence_shift
+IDRiD_0004.jpg,3,2,39.27,37.56,-1.7100000000000009
+IDRiD_0044.jpg,3,4,55.14,49.15,-5.990000000000002
+IDRiD_0052.jpg,0,1,47.7,45.65,-2.0500000000000043

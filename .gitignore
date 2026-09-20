@@ -3,6 +3,9 @@ notes.txt
 results/
 weights/
 images/
+evaluation_results/
+weights_results/
+unseen-IDRID-data.csv
 
 .venv/
 venv/
