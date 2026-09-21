@@ -2,7 +2,7 @@
 
 Automated five-grade diabetic retinopathy (DR) classification from retinal fundus photographs. ConvNeXt-Tiny was fine-tuned on 11,243 EyePACS and APTOS images, validated with 5-fold cross-validation, and then tested on 97 unseen IDRiD images from a different source dataset. Inference runs a five-model ensemble with test-time augmentation and flags low-confidence predictions for human review.
 
-> **Research use only.** This is not a medical device and is not intended for diagnosis or treatment decisions.
+> **Research use only.** This is not intended for diagnosis or treatment decisions.
 
 
 ## Output
